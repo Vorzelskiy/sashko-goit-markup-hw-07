@@ -279,7 +279,7 @@ body {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      Furl(../images/hero/Dark-bg-mob_ @2x.jpg);
+      url(../images/hero/Dark-bg-mob_@2x.jpg);
   }
 }
 
@@ -963,7 +963,7 @@ body {
   top: 50%;
   left: 50%;
 
-  max-width: 392px;
+  max-width: 100%;
   max-height: 586px;
   padding-left: 16px;
   padding-right: 16px;
@@ -1295,9 +1295,6 @@ body {
 
 .modal-list-item:not(:last-child) {
   margin-bottom: 40px;
-}
-
-.contacts-mobile {
 }
 
 .contacts-mobile-number {
