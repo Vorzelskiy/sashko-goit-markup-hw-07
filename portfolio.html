@@ -24,16 +24,21 @@
           <a href="./index.html" class="logo"
             >Web<span class="studio-black">Studio</span></a
           >
+          <button class="header-burger js-open-menu" tybe="button">
+            <svg class="burger-icon" width="32" height="22">
+              <use href="./images/icons.svg#icon-hamburger"></use>
+            </svg>
+          </button>
           <ul class="site-nav">
             <li class="site-nav-item">
-              <a href="./index.html" class="site-nav-link link-animation"
+              <a
+                href="./index.html"
+                class="site-nav-link current link-animation"
                 >Studio</a
               >
             </li>
             <li class="site-nav-item">
-              <a
-                href="./portfolio.html"
-                class="site-nav-link current link-animation"
+              <a href="./portfolio.html" class="site-nav-link link-animation"
                 >Portfolio</a
               >
             </li>
@@ -64,7 +69,7 @@
     </header>
     <main>
       <section class="section">
-        <div class="container">
+        <div class="container portfolio-container">
           <h1 class="visually-hidden">Portfolio</h1>
 
           <!-- filter-btn -->
@@ -105,10 +110,16 @@
                     </p>
                   </div>
                   <img
-                    src="./images/banking.jpg"
+                    srcset="
+                      ./images/portfolio/img_356-8.jpg 356w,
+                      ./images/portfolio/img_360-8.jpg 360w,
+                      ./images/portfolio/img_396.jpg   396w
+                    "
+                    sizes="(min-width: 1200px) 360px, (min-width: 768px) 356px, (min-width: 480px) 396px, 100vw"
+                    src="./images/portfolio/img_396.jpg"
                     alt="banking-app-interface -concept"
-                    width="360"
-                    height="300"
+                    width="396"
+                    height="280"
                   />
                 </div>
 
@@ -129,10 +140,16 @@
                     </p>
                   </div>
                   <img
-                    src="./images/cashless.jpg"
+                    srcset="
+                      ./images/portfolio/img_356-7.jpg 356w,
+                      ./images/portfolio/img_360-7.jpg 360w,
+                      ./images/portfolio/img_396-1.jpg 396w
+                    "
+                    sizes="(min-width: 1200px) 360px, (min-width: 768px) 356px, (min-width: 480px) 396px, 100vw"
+                    src="./images/portfolio/img_396-1.jpg"
                     alt="cashless-payment"
-                    width="360"
-                    height="300"
+                    width="396"
+                    height="280"
                   />
                 </div>
                 <div class="card-content">
@@ -152,10 +169,16 @@
                     </p>
                   </div>
                   <img
-                    src="./images/meditaion.jpg"
+                    srcset="
+                      ./images/portfolio/img_356-6.jpg 356w,
+                      ./images/portfolio/img_360-6.jpg 360w,
+                      ./images/portfolio/img_396-2.jpg 396w
+                    "
+                    sizes="(min-width: 1200px) 360px, (min-width: 768px) 356px, (min-width: 480px) 396px, 100vw"
+                    src="./images/portfolio/img_396-2.jpg"
                     alt="meditaion-app"
-                    width="360"
-                    height="300"
+                    width="396"
+                    height="280"
                   />
                 </div>
                 <div class="card-content">
@@ -175,10 +198,16 @@
                     </p>
                   </div>
                   <img
-                    src="./images/taxi.jpg"
+                    srcset="
+                      ./images/portfolio/img_356-5.jpg 356w,
+                      ./images/portfolio/img_360-5.jpg 360w,
+                      ./images/portfolio/img_396-3.jpg 396w
+                    "
+                    sizes="(min-width: 1200px) 360px, (min-width: 768px) 356px, (min-width: 480px) 396px, 100vw"
+                    src="./images/portfolio/img_396-3.jpg"
                     alt="taxi-service"
-                    width="360"
-                    height="300"
+                    width="396"
+                    height="280"
                   />
                 </div>
                 <div class="card-content">
@@ -198,10 +227,16 @@
                     </p>
                   </div>
                   <img
-                    src="./images/screen.jpg"
-                    alt="screen-illustrations"
-                    width="360"
-                    height="300"
+                    srcset="
+                      ./images/portfolio/img_356-4.jpg 356w,
+                      ./images/portfolio/img_360-4.jpg 360w,
+                      ./images/portfolio/img_396-4.jpg 396w
+                    "
+                    sizes="(min-width: 1200px) 360px, (min-width: 768px) 356px, (min-width: 480px) 396px, 100vw"
+                    src="./images/portfolio/img_396-4.jpg"
+                    alt="taxi-service"
+                    width="396"
+                    height="280"
                   />
                 </div>
                 <div class="card-content">
@@ -221,10 +256,16 @@
                     </p>
                   </div>
                   <img
-                    src="./images/online.jpg"
-                    alt="online-courses"
-                    width="360"
-                    height="300"
+                    srcset="
+                      ./images/portfolio/img_356-3.jpg 356w,
+                      ./images/portfolio/img_360-3.jpg 360w,
+                      ./images/portfolio/img_396-5.jpg 396w
+                    "
+                    sizes="(min-width: 1200px) 360px, (min-width: 768px) 356px, (min-width: 480px) 396px, 100vw"
+                    src="./images/portfolio/img_396-5.jpg"
+                    alt="taxi-service"
+                    width="396"
+                    height="280"
                   />
                 </div>
                 <div class="card-content">
@@ -245,10 +286,16 @@
                     </p>
                   </div>
                   <img
-                    src="./images/instagram.jpg"
-                    alt="instagram-stories-concept"
-                    width="360"
-                    height="300"
+                    srcset="
+                      ./images/portfolio/img_356-2.jpg 356w,
+                      ./images/portfolio/img_360-2.jpg 360w,
+                      ./images/portfolio/img_396-6.jpg 396w
+                    "
+                    sizes="(min-width: 1200px) 360px, (min-width: 768px) 356px, (min-width: 480px) 396px, 100vw"
+                    src="./images/portfolio/img_396-6.jpg"
+                    alt="taxi-service"
+                    width="396"
+                    height="280"
                   />
                 </div>
                 <div class="card-content">
@@ -268,10 +315,16 @@
                     </p>
                   </div>
                   <img
-                    src="./images/food.jpg"
-                    alt="organic-food"
-                    width="360"
-                    height="300"
+                    srcset="
+                      ./images/portfolio/img_356-1.jpg 356w,
+                      ./images/portfolio/img_360-1.jpg 360w,
+                      ./images/portfolio/img_396-7.jpg 396w
+                    "
+                    sizes="(min-width: 1200px) 360px, (min-width: 768px) 356px, (min-width: 480px) 396px, 100vw"
+                    src="./images/portfolio/img_396-7.jpg"
+                    alt="taxi-service"
+                    width="396"
+                    height="280"
                   />
                 </div>
                 <div class="card-content">
@@ -291,10 +344,16 @@
                     </p>
                   </div>
                   <img
-                    src="./images/fresh.jpg"
-                    alt="fresh-coffee"
-                    width="360"
-                    height="300"
+                    srcset="
+                      ./images/portfolio/img_356.jpg   356w,
+                      ./images/portfolio/img_360.jpg   360w,
+                      ./images/portfolio/img_396-8.jpg 396w
+                    "
+                    sizes="(min-width: 1200px) 360px, (min-width: 768px) 356px, (min-width: 480px) 396px, 100vw"
+                    src="./images/portfolio/img_396-8.jpg"
+                    alt="taxi-service"
+                    width="396"
+                    height="280"
                   />
                 </div>
                 <div class="card-content">
@@ -379,8 +438,114 @@
               </li>
             </ul>
           </div>
+
+          <div class="footer-form">
+            <h3 class="subtitle-footer">Subscribe</h3>
+            <form class="form-wrapper">
+              <input
+                class="footer-form-input"
+                type="email"
+                placeholder="E-mail"
+              />
+
+              <button class="footer-form-btn btn" type="submit">
+                Subscribe
+                <svg class="submit-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-frame-footer"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </footer>
+    <div class="mobile-menu js-menu-container">
+      <button class="modal-btn js-close-menu" type="button" data-modal-close>
+        <svg class="modal-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <ul class="modal-list">
+        <li class="modal-list-item">
+          <a href="./index.html" class="link-animation">Studio</a>
+        </li>
+        <li class="modal-list-item">
+          <a href="./portfolio.html" class="link-animation">Portfolio</a>
+        </li>
+        <li class="modal-list-item">
+          <a href="" class="link-animation current">Contacts</a>
+        </li>
+      </ul>
+      <div class="modal-wrapper">
+        <ul class="contacts-mobile">
+          <li class="contacts-mobile-number">
+            <a href="tel:+110001111111" class="link-animation"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li class="contacts-mobile-email">
+            <a href="mailto:info@devstudio.com" class="link-animation"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+
+        <ul class="mobile-social-list">
+          <li class="socials-item mobile-social">
+            <a
+              class="socials-link link-animation"
+              href="https://www.instagram.com/?hl=en"
+              target="_blank"
+              rel="noopener noreferer"
+              aria-label="link to insta"
+            >
+              <svg class="socials-icon" width="16" height="16">
+                <use href="./images/icons.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials-item">
+            <a
+              class="socials-link link-animation"
+              href="https://twitter.com/?request_context=signup"
+              target="_blank"
+              rel="noopener noreferer"
+              aria-label="link to twit"
+            >
+              <svg class="socials-icon" width="16" height="16">
+                <use href="./images/icons.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials-item">
+            <a
+              class="socials-link link-animation"
+              href="https://www.facebook.com/index.php"
+              target="_blank"
+              rel="noopener noreferer"
+              aria-label="link to facebook"
+            >
+              <svg class="socials-icon" width="16" height="16">
+                <use href="./images/icons.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials-item">
+            <a
+              class="socials-link link-animation"
+              href="https://www.linkedin.com/feed/"
+              target="_blank"
+              rel="noopener noreferer"
+              aria-label="link to linkedin"
+            >
+              <svg class="socials-icon" width="16" height="16">
+                <use href="./images/icons.svg#linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
