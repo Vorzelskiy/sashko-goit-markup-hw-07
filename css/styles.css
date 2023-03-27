@@ -1236,7 +1236,6 @@ body {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  overflow: auto;
 }
 .mobile-menu.is-open {
   transform: translateX(0);
@@ -1276,7 +1275,7 @@ body {
 
   font-style: normal;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 1.1;
   letter-spacing: -2px;
 
@@ -1288,6 +1287,7 @@ body {
 @media only screen and (min-width: 428px) {
   .contacts-mobile-number {
     letter-spacing: 0px;
+    font-size: 36px;
   }
 }
 
