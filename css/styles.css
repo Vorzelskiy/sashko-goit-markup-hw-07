@@ -151,9 +151,6 @@ body {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
-.main-header {
-}
-
 @media only screen and (min-width: 768px) {
   .main-header {
     display: flex;
@@ -254,10 +251,10 @@ body {
 /*_______________________________________________________ hero */
 /* mobile screen */
 .hero {
+  max-width: 1440px;
   padding-top: 112px;
   padding-bottom: 112px;
   text-align: center;
-  max-width: 428px;
   margin-left: auto;
   margin-right: auto;
   background-color: var(--title-text-color);
@@ -524,56 +521,24 @@ body {
   }
 }
 
-/* @media only screen and (min-width: 768px) {
-  .team-list {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: calc(-1 * var(--card-set-gap));
-    margin-bottom: calc(-1 * 72px);
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .team-list {
-    margin-right: calc(-1 * var(--card-set-gap));
-    margin-bottom: 0;
-  }
-}
-.team-list-item {
-  max-width: 264px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 72px;
-
+.team-item {
   background-color: var(--main-bg-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
 }
-@media only screen and (min-width: 768px) {
-  .team-list-item {
-    max-width: 100%;
-    flex-basis: calc(100% / 2 - var(--card-set-gap));
-    margin-right: var(--card-set-gap);
-    margin-bottom: 72px;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .team-list-item {
-    flex-basis: calc(100% / 4 - var(--card-set-gap));
-    margin-bottom: 0;
-  }
-} */
-
 .team-item-content {
   padding: 32px 16px 8px;
+  padding-bottom: 32px;
   text-align: center;
+}
+.text-team {
+  margin-bottom: 8px;
 }
 .socials {
   display: flex;
   justify-content: center;
   gap: 24px;
-  padding-bottom: 32px;
 }
 
 .socials-link {
@@ -925,6 +890,7 @@ body {
   }
 }
 .footer-form-input::placeholder {
+  padding-left: 16px;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -962,9 +928,9 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 100%;
+  max-width: 408px;
 
-  max-width: 100%;
-  max-height: 586px;
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 72px;
@@ -979,11 +945,11 @@ body {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
   .modal {
   }
-}
-@media only screen and (min-width: 1200px) {
+} */
+/* @media only screen and (min-width: 1200px) {
   .modal {
     position: absolute;
     top: 50%;
@@ -1004,7 +970,7 @@ body {
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-}
+} */
 
 .modal-btn {
   display: flex;
@@ -1138,6 +1104,7 @@ body {
   width: 16px;
   height: 16px;
   margin-right: 8px;
+  flex-shrink: 0;
 
   border: 1px solid #2e2f42;
   border-radius: 2px;
@@ -1253,6 +1220,9 @@ body {
   height: 100vh;
   top: 0;
   left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   padding: 80px 40px 40px 40px;
 
@@ -1277,11 +1247,13 @@ body {
 
 .mobile-social-list {
   display: flex;
-  gap: 56px;
+  gap: 24px;
 }
 
-.modal-list {
-  margin-bottom: 284px;
+@media only screen and (min-width: 428px) {
+  .mobile-social-list {
+    gap: 56px;
+  }
 }
 
 .modal-list-item {
@@ -1299,17 +1271,24 @@ body {
 
 .contacts-mobile-number {
   width: 353px;
+  display: block;
   margin-bottom: 40px;
-  margin-right: auto;
-  margin-left: auto;
+
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 32px;
   line-height: 1.1;
+  letter-spacing: -2px;
 
   text-transform: capitalize;
 
   color: #4d5ae5;
+}
+
+@media only screen and (min-width: 428px) {
+  .contacts-mobile-number {
+    letter-spacing: 0px;
+  }
 }
 
 .contacts-mobile-email {
